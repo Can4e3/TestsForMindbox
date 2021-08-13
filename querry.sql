@@ -1,0 +1,2 @@
+SELECT dbo.products.pname, dbo.categorys.cname from products,categorys where CHARINDEX(categorys.cname, products.cname) > 0;
+SELECT dbo.products.pname, null from products where  products.cname is null;
